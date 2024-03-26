@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Company</title>
+  
+<style>
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+   
+}
+.container{
+  margin: auto;
+  max-width:1200px;
+  padding: 0 20px;
+  justify-content:space-between;
+}
+
+ 
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+a{
+  color:white;
+  font-weight:700;
+  font-size:15px;
+  font-family:Sans-serif;
+  text-decoration:none;
+  margin-bottom:70px;
+
+}
+
+.button{
+  padding:12px 17px;
+  border-radius:5px;
+  border:0;
+  font-family:'Quicksand',sans-serif;
+  font-weight:bold;
+  background-color:white;
+  font-size:100%;
+  letter-spacing:0.5px;
+  margin-top:5px;
+}
+.title3{
+  font-family:'Quicksand',sans-serif;
+  font-size:40px;
+  text-align:center;
+  margin-top:90px;
+}
+
+.page2{
+  text-align:center;
+}
+.page3{
+ background-color:#a9c9de;
+
+}
+.page3-box{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  padding: 20px 0;
+}
+.page3-img{
+ max-width:540px;
+width:100%;
+  
+}
+.information{
+flex:1;
+  padding-left:70px;
+}
+button.in-touch{
+  background-color:#e58f0e;
+  color:white;
+}
+button.in-touch:hover{
+    background-color:#56dddd;
+    transition: 0.4s;
+     color: white;
+    
+}
+.info-title{
+  font-family:'Quicksand',sans-serif;
+  font-size:30px;
+  font-weight:bold;
+
+}
+.performance{
+  color:#000000b3;
+  margin-bottom:20px;
+  line-height:1.4;
+  font-size: 20px;
+
+}
+.box_main{
+  display:flex;
+  flex-wrap:wrap;
+}
+.box_sub{
+flex:auto;
+margin-left: 10px;
+padding:60px;
+text-align:center;  
+font-family:'Quicksand',sans-serif;
+border-radius:4px;
+}
+span{
+  font-size:40px;
+
+}
+.box-title{
+  font-size:28px;
+  font-weight:bold;
+}
+.light{
+  background-color:#143C61;
+  color:white;
+  
+}
+.dark{
+  background-color:#0C3884;
+  color:white;
+  font-size: 20px;
+}
+.md{
+  background-color:#7ba5aa;
+  color:white;
+  font-size: 20px;
+}
+.page4{
+  padding:80px 0;
+}
+
+ /* Navigation */
+  
+ nav {
+    height: 72px;
+    background:  rgb(249, 247, 247);
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+  }
+  
+  nav a {
+    padding: 0 32px;
+    color: #eee;
+    transition: 0.4s;
+  }
+  
+  nav a:hover {
+    text-decoration: none;
+    color: rgb(210, 122, 14);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .active {
+    color: #063A5D;
+  }
+  
+  #logo-img {
+    display: flex;
+    height: 100%;
+    
+    padding: 0 32px;
+    align-items: center;
+    
+    transition: 0.4s;
+  }
+  
+  #logo-img img {
+    height: 50px;
+  }
+  
+
+  .banner {
+  width: 100%;
+  background-color: #063A5D;
+}
+.banner-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.countdown{
+    font-family:'Quicksand',sans-serif;
+    text-align: center;
+  font-size:30px;
+  font-weight:bold;
+  color: white;
+}
+.christmas{
+    
+flex:unset;
+margin-left: 5px;
+padding:60px;
+text-align:center;  
+font-family:'Quicksand',sans-serif;
+border-radius:4px;
+  background-color:#143C61;
+  color:white;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  margin-webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #063A5D;
+}
+
+@media (max-width: 840px) {
+    
+    nav ul {
+      display: none;
+    }
+    .hamburger{
+    display: block;
+  }
+
+  .information {
+    padding-left: 0;
+    text-align: center;
+  }
+  .page3-box {
+    justify-content: center;
+  }
+}
+</style>
+</head>
+<body>
+        <nav>
+            <div id="logo-img">
+               
+                    <h1>Logo</h1>
+                
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+             </div>
+            <ul>
+                <li>
+                    <a class="active" >Our Team</a>
+                </li>
+                <li>
+                    <a class="active" >Our Medias</a>
+                </li>
+                <li>
+                    <a class="active">Jobs</a>
+                </li>
+                <li>
+                    <a class="active" >Contact</a>
+                </li>
+                
+              
+                
+            </ul>
+        </nav>
+        </div>
+          
+       </div>
+       
+      
+       
+    </div>
+    <section class="banner">
+        <div class="banner-inner">
+          <img src="../image/main_1.png">
+          
+        </div>
+      </section>
+       <div class="page2">
+         <div class="container">
+           <h2 class="title3">Media Comapny</h2>
+          
+           </div>
+         </div>
+       </div>
+       <div class="page3">
+         <div class="container">
+           <div class="page3-box">
+            <div class="christmas">
+                                  
+              
+            <div class="countdown">
+                <h1 >Next Christmas In</h1>
+                <div id="days"></div>
+                <div id="hours"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
+            </div>
+        </div>
+       <div class="information">
+         <div class="info-title">We help
+            our partners
+            in online
+            customer acquisition</div>
+         <br>
+         <div class="performance">Loreum ipsum. </div>
+         <button class="button in-touch">Get in touch</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="page4">
+         <div class="container">
+           <div class="box_main">
+            <div class="box_sub light">
+                <div class="box-title">New customers</div>
+                  
+                  <div class="box-features">
+                    <p> Loreum ipsum</p>
+                    <p>Loreum ipsum</p>
+                    <p> Loreum ipsum,</p>
+                    <p>Loreum ipsum, </p>
+                    <p>Loreum ipsum. </p>
+                    
+                  </div>  
+                  
+              </div>
+              
+        <div class="box_sub md">
+             <div class="box-title">Intelligently</div>
+              
+               <div class="box-features">
+                 <p>Loreum ipsum</p>
+                 <p>Loreum ipsum</p>
+                 
+                 <p>  Loreum ipsum.</p>
+               </div>  
+               
+           </div>
+           
+           
+           <div class="box_sub dark">
+            <div class="box-title">Professionally</div>
+          
+              <div class="box-features">
+                <p>Loreum ipsum </p>
+                <p>Loreum ipsum</p>
+                <p>Loreum ipsum</p>
+                <p>  Loreum ipsum.</p>
+              </div>  
+              
+          </div>
+       </div>
+       </div>
+       </div>
+      
+           </div>
+         </div>
+       </div>
+</body>
+<script>
+    
+
+function calculateChristmasCountdown(){
+    
+    
+    var now = new Date();
+
+  
+    var currentMonth = (now.getMonth() + 1);
+
+    var currentDay = now.getDate();
+
+   
+    var nextChristmasYear = now.getFullYear();
+    if(currentMonth == 12 && currentDay > 25){
+        
+        nextChristmasYear = nextChristmasYear + 1;
+    }
+
+    var nextChristmasDate = nextChristmasYear + '-12-25T00:00:00.000Z';
+    var christmasDay = new Date(nextChristmasDate);
+
+    
+    var diffSeconds = Math.floor((christmasDay.getTime() - now.getTime()) / 1000);
+
+    var days = 0;
+    var hours = 0;
+    var minutes = 0;
+    var seconds = 0;
+
+       if(currentMonth != 12 || (currentMonth == 12 && currentDay != 25)){
+      
+        days = Math.floor(diffSeconds / (3600*24));
+        diffSeconds  -= days * 3600 * 24;
+        hours   = Math.floor(diffSeconds / 3600);
+        diffSeconds  -= hours * 3600;
+        minutes = Math.floor(diffSeconds / 60);
+        diffSeconds  -= minutes * 60;
+        seconds = diffSeconds;
+    }
+
+    
+    document.getElementById('days').innerHTML = days + ' Days';
+    document.getElementById('hours').innerHTML = hours + ' Hours';
+    document.getElementById('minutes').innerHTML = minutes + ' Minutes';
+    document.getElementById('seconds').innerHTML = seconds + ' Seconds';
+
+    
+    setTimeout(calculateChristmasCountdown, 1000);
+}
+
+calculateChristmasCountdown();
+
+
+</script>
+</html>
